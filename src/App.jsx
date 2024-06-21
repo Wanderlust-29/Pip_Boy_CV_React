@@ -5,7 +5,7 @@ import Header from './header/Header';
 
 import Exp from './content/exp/Exp';
 import Data from './content/data/Data';
-import Map from './Map';
+import Map from './content/map/Map';
 import Footer from './footer/Footer';
 
 //STAT

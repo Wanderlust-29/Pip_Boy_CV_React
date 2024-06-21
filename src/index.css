@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "Monofonto";
+  src:
+    local("Monofonto"),
+    url("./assets/font/monofonto.otf") format("opentype"),
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Monofonto", serif;;
   line-height: 1.5;
   font-weight: 400;
   background-color: #10170f;
+  font-size: 62.5%;
 }
 
 body {
@@ -22,9 +29,9 @@ p,a{
   text-decoration: none;
 }
 a{
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 p{
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }

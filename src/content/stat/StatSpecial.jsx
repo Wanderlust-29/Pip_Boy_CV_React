@@ -9,7 +9,7 @@ import agility from '../../assets/agility.gif';
 import luck from '../../assets/luck.gif';
 
 function StatSpecial() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleMouseEnter = (index) => {
     setActiveIndex(index);
@@ -34,6 +34,15 @@ function StatSpecial() {
     agility,
     luck,
   ];
+  const descriptions = [
+    `Juste assez pour cliquer sur ENTER et envoyer un git push --force plus destructeur qu'une patate de forain.`,
+    `Capable de débusquer ses propres bugs presque aussi vite qu'il ne les implémente.`,
+    `Peut coder pendant plus de 6 heures et 12 canettes de boisson énergisante de suite.`,
+    `Trop juste pour clamer "It's not a bug, it's a feature" tout en restant crédible, préfère coder proprement.`,
+    `Comprend ses copy/paste de Stack Overflow... enfin, c'est ce qu'il dit.`,
+    `Tombe parfois de sa chaise, mais retrouve toujours son poste de travail.`,
+    `N'a grillé aucun CPU depuis plus d'un an.`
+  ];
 
   return (
     <div className='special'>
@@ -51,12 +60,16 @@ function StatSpecial() {
       </div>
       <div className='special-right-column'>
         {images.map((image, index) => (
-          <img
-            key={index}
-            className={`special-attribute-image ${activeIndex === index ? 'active' : ''}`}
-            src={image}
-            alt={`a fallout vault boy gif representing the ${attributes[index].name} special attribute`}
-          />
+          <div key={index} className={`special-attribute-container ${activeIndex === index ? 'active' : ''}`}>
+            <img
+              className={`special-attribute-image ${activeIndex === index ? 'active' : ''}`}
+              src={image}
+              alt={`a fallout vault boy gif representing the ${attributes[index].name} special attribute`}
+            />
+            <p className={`special-attribute-description ${activeIndex === index ? 'active' : ''}`}>
+              {descriptions[index]}
+            </p>
+          </div>
         ))}
       </div>
     </div>
