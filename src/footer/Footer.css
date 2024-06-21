@@ -1,0 +1,37 @@
+.footer{
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer >div { 
+    padding: 0.3rem 0;
+    display: flex;
+    justify-content: center;
+    width: 24%;
+    background-color:#11291b;
+    text-align: center;
+    align-items: center;
+}
+.level{
+    border: 0.1rem solid #64d515;
+    background-color: #000;
+    width: 6rem;
+    height: 1rem;
+    box-sizing: inherit;
+    margin-left: 1rem;
+}
+footer >div:nth-of-type(2) { 
+    width: 50%;
+}
+
+.level::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    border: 0.1rem solid #64d515;
+    background-color: #64d515;
+    height: 0.9rem;
+    box-sizing: inherit;
+    max-height: 100%;
+}

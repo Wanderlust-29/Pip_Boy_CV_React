@@ -1,0 +1,25 @@
+.nav-bar{
+    z-index: 999;
+    position: relative;
+}
+
+.list-top {
+    display: flex;
+    justify-content: space-between;
+}
+.list-top > li {
+    width: 25%;
+    text-align: center;
+}
+.list-top > li > a{
+    padding: 0 1rem;
+}
+.list-top > li a.active {
+    border-radius: .25rem 0.25rem 0 0;
+    border-top: #7ff12a solid 1px;
+    border-right: #7ff12a solid 1px;
+    border-left: #7ff12a solid 1px;
+    border-bottom:#10170f solid 3px;
+}
+
+

@@ -1,0 +1,41 @@
+.special{
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.special-left-column{
+    padding-top: .5rem;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7px;
+}
+
+.attribute {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.attribute.box-active {
+    background-color: #7ff12a;
+}
+
+.attribute.box-active p {
+    color: black;
+}
+
+.special-attribute-image{
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8);
+}
+
+.special-attribute-image {
+    display: none;
+  }
+  
+  .special-attribute-image.active {
+    display: block;
+  }

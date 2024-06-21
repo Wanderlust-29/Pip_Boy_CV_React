@@ -1,0 +1,20 @@
+nav{
+    z-index: 999;
+}
+.list-bottom{
+    display: flex;
+    justify-content: start;
+}
+.list-bottom > li {
+    text-align: center;
+    width: 25%;
+}
+
+.list-bottom li a.active {
+    color: #7ff12a;
+  }
+  
+  .list-bottom li a.inactive {
+    /* color: #489C0A; */
+    opacity: 0.4;
+  }
