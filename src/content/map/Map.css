@@ -1,0 +1,15 @@
+.map{
+  position: relative;
+}
+
+.map img{
+  width: 100%;
+  height: auto;
+}
+
+.landmark img{
+  width: 40px;
+  position: absolute;
+  top: 157px;
+  left: 252px;
+}
